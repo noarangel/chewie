@@ -97,7 +97,6 @@ class _MaterialControlsState extends State<MaterialControls> with SingleTickerPr
     controller = chewieController.videoPlayerController;
 
     playPauseIconAnimationController ??= AnimationController(
-      vsync: this,
       duration: const Duration(milliseconds: 400),
       reverseDuration: const Duration(milliseconds: 400),
     );

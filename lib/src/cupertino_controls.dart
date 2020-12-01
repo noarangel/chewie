@@ -112,6 +112,7 @@ class _CupertinoControlsState extends State<CupertinoControls> with SingleTicker
     playPauseIconAnimationController ??= AnimationController(
       duration: const Duration(milliseconds: 400),
       reverseDuration: const Duration(milliseconds: 400),
+      vsync: this
     );
 
     if (_oldController != chewieController) {
